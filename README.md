@@ -1,6 +1,12 @@
 # Redux Real World Example
 Redux 公式のサンプルコードをコピーして、多少の変更を加えたものです。
 
+## 動作
+* SPA として動作します。
+* react-router-dom を利用してヒストリーAPIでURLを管理します。
+* `${ROOT_URL}/${GITHUB_USERNAME}` という URL で GitHub のユーザ情報を取得します。
+* `${ROOT_URL}/${GITHUB_USERNAME}/${GITHUB_REPO}` という URL で GitHub のレポジトリ情報を取得し表示します。
+
 # 以下は公式の README です。
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
