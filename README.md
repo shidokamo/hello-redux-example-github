@@ -1,4 +1,7 @@
 # Redux Real World Example
+Redux 公式のサンプルコードをコピーして、多少の変更を加えたものです。
+
+# 以下は公式の README です。
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
 
