@@ -15,11 +15,11 @@ const Root = ({ store }) => (
         <li><Link to="shidokamo">Me</Link></li>
       </ul>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/:login/:name"
+        <Route path="/:login/:name"
                component={RepoPage} />
-        <Route exact path="/:login"
+        <Route path="/:login"
                component={UserPage} />
+        <Route path="/" component={App} />
       </Switch>
       <DevTools />
     </div>
