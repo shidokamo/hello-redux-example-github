@@ -23,6 +23,8 @@ const API_ROOT = 'https://api.github.com/'
 const callApi = (endpoint, schema) => {
   const fullUrl = (endpoint.indexOf(API_ROOT) === -1) ? API_ROOT + endpoint : endpoint
 
+  console.log(fullUrl)
+
   return fetch(fullUrl)
     .then(response =>
       response.json().then(json => {
