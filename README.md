@@ -7,6 +7,17 @@ Redux 公式のサンプルコードをコピーして、多少の変更を加�
 * `${ROOT_URL}/${GITHUB_USERNAME}` という URL で GitHub のユーザ情報を取得します。
 * `${ROOT_URL}/${GITHUB_USERNAME}/${GITHUB_REPO}` という URL で GitHub のレポジトリ情報を取得し表示します。
 
+## 実装のノート
+* async を Redux で扱うために Thunk を使用しています。
+* このため、Action Creater の中に多くのロジックが含まれています
+* ユーザのページを表示した際のアクションは通常次のように遷移します。
+  * `@@INIT`
+  * `USER_REQUEST`
+  * `STARRED_REQUEST`
+  * `USER_SUCCESS`
+  * `STARRED_SUCCESS`
+
+
 # 以下は公式の README です。
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides a simple way to start React projects with no build configuration needed.
